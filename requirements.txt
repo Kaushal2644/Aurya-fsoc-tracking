@@ -1,0 +1,8 @@
+opencv-python==4.10.0.84
+numpy==1.26.4
+scipy==1.13.1
+pandas==2.2.2
+pyqt5==5.15.11
+pyqtgraph==0.13.7
+filterpy==1.4.5
+pyinstaller==6.10.0

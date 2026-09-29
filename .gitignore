@@ -1,0 +1,82 @@
+# ==============================
+# Aurya / FSOC Tracker - Git Ignore
+# ==============================
+
+# Python cache / compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.code-workspace
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Logs and generated runtime output
+logs/*
+!logs/.gitkeep
+*.log
+
+# PyInstaller / build output
+build/
+dist/
+
+# Keep the PyInstaller spec file
+# fsoc_tracker.spec
+
+# Generated previews / temporary media
+scene_preview.png
+camera_view_preview.png
+*_preview.png
+*_output.png
+
+# Temporary / local test files
+tmp/
+temp/
+*.tmp
+*.bak
+
+# Local temporary/generated videos
+*.avi
+*.mov
+*.mkv
+
+# Generated video-diff / diagnostic outputs
+video_diffs/
+diagnostic_output/
+diagnostics_output/
+
+# Coverage / test cache
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python packaging metadata
+*.egg-info/
+.eggs/
+
+# Local generated archives
+*.zip
+*.tar
+*.tar.gz
