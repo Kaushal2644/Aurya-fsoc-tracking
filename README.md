@@ -106,11 +106,8 @@ Virtual Scene / MP4 Input
 ```
 
 A single `FrameSource` abstraction (`core/frame_source.py`) provides both
-`SimulatorFrameSource` and `VideoFileFrameSource`, so the detector, tracker,
-and logger behave identically regardless of input source. This was validated
-directly by comparing tracking accuracy on live simulation against a
-noise-and-fog stress-test video, with results matching to within a fraction
-of a pixel.
+`SimulatorFrameSource` and `VideoFileFrameSource`, allowing the detector,
+tracker, and logger to operate through a common processing pipeline.
 
 ## Project Structure
 ```
@@ -172,14 +169,14 @@ Aurya-fsoc-tracking/
 | Computer Vision | OpenCV |
 | Numerical Processing | NumPy |
 | Data processing | Pandas |
-| State Estimation | Custom Kalman Filtter |
+| State Estimation | Custom Kalman Filter |
 | Camera Control | PID Controller |
 | GUI | PyQt5 |
 | Visualization | PyQtGraph |
 | Video Processing | OpenCV |
 | Packaging | PyInstaller |
 | Containerization | Docker |
-| Version Control | Git/Github |
+| Version Control | Git/GitHub |
 
 
 ## Installation (local, without Docker)
@@ -188,7 +185,7 @@ Aurya-fsoc-tracking/
 
 ```bash
 git clone https://github.com/Kaushal2644/Aurya-fsoc-tracking.git
-cd fsoc-tracker
+cd Aurya-fsoc-tracking
 
 python -m venv venv
 # Windows:
