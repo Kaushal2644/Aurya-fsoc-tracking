@@ -1,4 +1,3 @@
-# diagnostic_raw_detector.py — run this first, don't delete yet
 from core.frame_source import SimulatorFrameSource
 from core.detector import BlobDetector
 
